@@ -2,7 +2,6 @@ package tab
 
 import "fmt"
 
-
 func WrapArgError(i int, err error) error {
 	err = fmt.Errorf("arg %d: %w", i, err)
 	return wrapTabError(err)

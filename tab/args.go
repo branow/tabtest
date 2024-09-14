@@ -21,10 +21,10 @@ type Args []any
 // be of type *[testing.T], and types of all other parameters must match
 // the values of the given argument or be able to be converted at every test case.
 //
-// Optionally, if the first element of arguments for a specific call is a string with the 
-// prefix [CaseNamePrefix], it is considered as a case name and isn't transferred 
-// to the function. A test case name is a value that is transferred to the  
-// [testing.T.Run()]) as a first parameter.  The custom case name is appended to 
+// Optionally, if the first element of arguments for a specific call is a string with the
+// prefix [CaseNamePrefix], it is considered as a case name and isn't transferred
+// to the function. A test case name is a value that is transferred to the
+// [testing.T.Run()]) as a first parameter.  The custom case name is appended to
 // the default case name "case <num>"  and then it is used.
 //
 // The examples of test case names: "case 0", "case 0: invalid input"
